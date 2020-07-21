@@ -47,17 +47,22 @@ src: local('Merriweather Regular'), local('Merriweather-Regular'),
     url('./assets/fonts/merriweather/merriweather-regular.ttf') format('truetype'),
 }
 
+:root {
+  /* Colorbook */
+  --white: #F4F4F4;
+  --off-white: #ECEEE8;
+  --green-lt: #607A5E;
+  --gold: #C0963B;
+  --green-dk: #38443E;
+  --brown-lt: #5E5146;
+  --brown-dk: #3A342E;
+}
 
+/* Resets */
 body {
   font-family: "Montserrat", sans-serif;
 }
 
-p {
-  font-family: "Merriweather", serif;
-}
-
-img {
-  opacity: 37%;
-  max-width: 383px;
-  transform: rotate(-10deg);
+.page {
+  background-color: var(--white);
 }

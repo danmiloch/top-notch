@@ -41,16 +41,17 @@ When you work with us, you’re working with certified arborists.
 Each of our climbers is a certified arborist: tried and tested in the realm of abasdlfkjasdf
 
 Ryley Peck
-CO-OWNER
+ARBORIST
 
 Jeremiah Krepps
-CO-OWNER
+ARBORIST
 
-Curt 
+Curt Simmons
 CLIMBER
 
-Brian
-CLIMBER
+Brian McWhirter
+ARBORIST
+
 
 
 
