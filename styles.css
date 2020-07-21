@@ -61,8 +61,6 @@ src: local('Merriweather Regular'), local('Merriweather-Regular'),
 /* Resets */
 body {
   font-family: "Montserrat", sans-serif;
-}
-
-.page {
   background-color: var(--white);
 }
+
