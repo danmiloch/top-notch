@@ -64,3 +64,6 @@ body {
   background-color: var(--white);
 }
 
+.logo {
+  max-width: 10%;
+}
