@@ -419,6 +419,7 @@ input {
   margin-bottom: var(--space-quad);
   width: 100%;
   border-radius: 0;
+  -webkit-appearance: none;
 }
 
 
