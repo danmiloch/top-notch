@@ -391,6 +391,7 @@ ul.location {
 .img-tree {
   width: 90%;
   opacity: 35%;
+  visibility: visible;
   float: right;
 }
 
