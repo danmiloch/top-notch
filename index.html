@@ -13,7 +13,7 @@
     >
 
     <div class="width-container">
-      <header>
+      <header class="margin-primary">
         <nav>
           <a href="/README.md" aria-label="top-notch tree care"
             ><svg class="logo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350.55 350.55"><defs></defs>
@@ -30,7 +30,7 @@
       </header>
 
       <main id="main-content">
-        <div class="intro">
+        <div class="intro margin-primary">
           <div class="intro-content">
             <h3>
               <ul class="location t-location-sans">
@@ -44,20 +44,27 @@
               In backyards and city parks, we’ve been helping the people of
               Michigan with their trees since 2013.
             </p>
+            <a href="#request-quote" class="button">Request a Quote</a>
           </div>
           <div class="intro-content">
             <img class="img-tree" src="./assets/images/tree-rings_full-contrast.png" alt="">
           </div>
+          
         </div>
 
         <section class="quote" id="quote">
-          <h3>Request a Quote</h3>
-          <p>
-            We’d love to stop by and give you a free quote. We’ll give you a
+          <div class="margin-primary">
+          <div class="form-intro">
+          <h3 class="section-title" id="request-quote">Request a Quote</h3>
+            <h4 class="t-section-header-sans">
+            We’d love to stop by and give you a free quote.
+          </h4>
+          <p class="t-body-serif">
+            We’ll give you a
             call if you fill out this form, our you can call us directly at
             <a href="tel:1-517-712-3721">517-712-3721</a>.
           </p>
-
+        </div>
           <div class="form-container">
             <form action="#" method="POST" netlify>
               <div class="form-line">
@@ -100,20 +107,19 @@
                 <label for="work-needed">Work Needed</label>
               </div>
 
-              <button type="submit">
+              <button class="button" type="submit">
                 Submit This Request
               </button>
+              
             </form>
-          </div>
-        </section>
+            </div>
+        </section></div>
       </main>
     </div>
     <footer>
-      © 2020 Top Notch Tree Care LLC
-      <a href="#work">Work</a>
-      <a href="#team">Team</a>
-      <a href="#quote">Request a Quote</a>
-      <a href="https://www.facebook.com/TopNotchTreeCare.Lansing/">Facebook</a>
+      <a href="https://www.facebook.com/TopNotchTreeCare.Lansing/">
+        <img src="./assets/images/facebook.svg" class="social-icon" alt=""></a>
+      <p class="t-fine-print-sans">© 2020 top notch tree care llc</p>
     </footer>
   </body>
 </html>

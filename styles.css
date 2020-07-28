@@ -168,42 +168,6 @@ body {
 
 /* ---- END RESETS ---- */
 
-body {
-  font-family: var(--font-family-sans);
-  background-color: var(--white);
-  font-size: 1.6rem;
-  margin-top: 3.2rem;
-  margin-right: 3.2rem;
-  margin-bottom: 3.2rem;
-  margin-left: 3.2rem;
-}
-
-@media (min-width: 900px) {
-  body {
-    margin-left: 20rem;
-    margin-right: 20rem;
-  }
-}
-
-.intro {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-}
-
-.intro-content {
- width: 50%;
-}
-
-.img-tree {
-  width: 90%;
-  opacity: 35%;
-  float: right;
-}
-
-h1.t-hero-sans {
-  margin-bottom: var(--space-default);
-}
 
 /* Type Specs */
 .t-hero-sans {
@@ -268,7 +232,7 @@ h1.t-hero-sans {
 
 .t-hero-serif {
   font-family: var(--font-family-serif);
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: var(--weight-regular);
   line-height: 1.5;
   color: var(--brown-dk);
@@ -321,6 +285,25 @@ h1.t-hero-sans {
 /* Body */
 
 
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--white);
+  font-size: 1.6rem;
+}
+
+.margin-primary {
+  margin-top: 3.2rem;
+  margin-right: 3.2rem;
+  margin-left: 3.2rem;
+}
+
+@media (min-width: 900px) {
+  .margin-primary {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+
 
 
 /*  Nav */
@@ -336,13 +319,42 @@ nav {
 .phone-link {
   font-weight: var(--weight-bold);
   color: var(--brown-dk);
-  border-bottom: 2px solid var(--brown-dk);
+  border-bottom: 3px solid var(--brown-dk);
   text-decoration: none;
 }
 
 .logo {
   width: 100px;
   fill: var(--brown-dk);
+}
+
+p.t-hero-serif {
+  margin-bottom: 6rem;
+}
+
+
+/* Buttons */
+
+
+.button {
+  font-weight: var(--weight-bold);
+  font-family: var(--font-family-sans);
+  font-size: 1.6rem;
+  border: 0;
+  color: var(--white);
+  background: var(--brown-dk);
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  letter-spacing: .15rem;
+  border-radius: 200px;
+  transition: .15s ease-in-out;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--brown-lt);
+  transition: .15s ease-in-out;
 }
 
 
@@ -352,7 +364,7 @@ nav {
 ul.location {
   display: flex;
   list-style: none;
-  margin-bottom: var(--space-default);
+  margin-bottom: var(--space-double);
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -365,7 +377,35 @@ ul.location {
   margin-left: 1.6rem;
 }
 
+.intro {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 12rem;
+}
+
+.intro-content {
+ width: 50%;
+}
+
+.img-tree {
+  width: 90%;
+  opacity: 35%;
+  float: right;
+}
+
+h1.t-hero-sans {
+  margin-bottom: var(--space-double);
+}
+
 /* Form */
+
+.quote::before {
+  content: url(./assets/images/ragged-edge-top.svg); 
+  position: relative;
+  top: -3rem;
+  margin: 0;
+}
 
 /* input {
   display: block;
@@ -376,8 +416,40 @@ ul.location {
   width: 100%;
 } */
 
+.form-intro {
+  text-align: center;
+}
+
+.section-title {
+  font-weight: var(--weight-bold);
+  color: var(--green-lt);
+  border-bottom: 3px solid var(--green-lt);
+  display: inline-block;
+  margin-bottom: 6rem;
+}
+
+h4.t-section-header-sans {
+  margin-bottom: var(--space-default);
+}
+
+p.t-body-serif {
+  margin-bottom: var(--space-quad);
+}
+
+p a {
+  color: var(--brown-dk);
+}
+
 .form-input {
   width: 50%;
+}
+
+.form-input:nth-child(odd) {
+  padding-right: 2.5rem;
+}
+
+.form-input:nth-child(even) {
+  padding-left: 2.5rem;
 }
 
 .form-container {
@@ -461,25 +533,20 @@ input:focus + label {
   transition: all ease-in-out .15s;
 }
 
-/* Buttons */
-
-button {
-  font-weight: var(--weight-bold);
-  font-family: var(--font-family-sans);
-  font-size: 1.6rem;
-  border: 0;
-  color: var(--white);
-  background: var(--brown-dk);
-  text-decoration: none;
-  padding: 1.6rem 3.2rem;
-  letter-spacing: .15rem;
-  border-radius: 200px;
-  transition: .15s ease-in-out;
-  text-transform: uppercase;
-  cursor: pointer;
+footer {
+  background-color: var(--off-white);
+  text-align: center;
+  position: relative;
 }
 
-button:hover {
-  background: var(--brown-lt);
-  transition: .15s ease-in-out;
+footer p{
+  color: var(--brown-dk);
+  opacity: 70%;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 3.2rem;
 }
