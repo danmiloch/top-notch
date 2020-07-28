@@ -172,13 +172,26 @@ body {
 /* Type Specs */
 .t-hero-sans {
   font-family: var(--font-family-sans);
-  font-size: 4rem;
   font-weight: var(--weight-extra-bold);
-  line-height: 1.05;
   color: var(--brown-dk);
   letter-spacing: -.08rem;
   text-transform: uppercase;
 }
+
+@media (max-width: 899px) {
+  .t-hero-sans {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .t-hero-sans {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+  }
+}
+
 
 .t-review-sans {
   font-family: var(--font-family-sans);
@@ -246,11 +259,6 @@ body {
   color: var(--brown-dk);
 }
 
-@media (min-width: 900px) {
-  .t-hero-sans {
-    font-size: 6rem;
-  }
-}
 
 @media (max-width: 900px) {
 .t-hero-serif {
@@ -291,18 +299,32 @@ body {
   font-size: 1.6rem;
 }
 
-.margin-primary {
-  margin-top: 3.2rem;
-  margin-right: 3.2rem;
-  margin-left: 3.2rem;
+
+@media (max-width: 899px) {
+  .margin-primary {
+    margin-top: 6rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
 }
 
 @media (min-width: 900px) {
   .margin-primary {
+    margin-top: 8rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+}
+
+@media (min-width: 1095px) {
+  .margin-primary {
+    margin-primary: 8rem;
     margin-left: 20rem;
     margin-right: 20rem;
   }
 }
+
+
 
 
 
@@ -329,7 +351,7 @@ nav {
 }
 
 p.t-hero-serif {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 
@@ -385,8 +407,24 @@ ul.location {
   margin-bottom: 12rem;
 }
 
-.intro-content {
+.intro-content-text {
  width: 50%;
+}
+
+.intro-content-img {
+  width: 50%;
+}
+
+@media (max-width: 647px) {
+  .intro-content-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 899px) {
+  h1.t-hero-sans {
+    margin-bottom: var(--space-default);
+  }
 }
 
 .img-tree {
@@ -396,9 +434,32 @@ ul.location {
   float: right;
 }
 
-h1.t-hero-sans {
-  margin-bottom: var(--space-double);
+@media (max-width: 647px) {
+  .intro-content-img {
+    display: none;
+  }
 }
+
+
+@media (max-width: 899px) {
+  h1.t-hero-sans {
+    margin-bottom: var(--space-default);
+  }
+}
+
+@media (min-width: 900px) {
+  h1.t-hero-sans {
+    margin-bottom: var(--space-double);
+  }
+}
+
+/* @media (min-width: 1300px) {
+  h1.t-hero-sans {
+    margin-bottom: var(--space-double);
+  }
+} */
+
+
 
 /* Form */
 
@@ -516,6 +577,10 @@ textarea:focus {
 textarea:focus + label {
   color: #c0963b;
   transition: all ease-in-out .15s;
+}
+
+.textarea-label {
+  top: -2rem;
 }
 
 input:focus {
