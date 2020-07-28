@@ -350,6 +350,7 @@ p.t-hero-serif {
   transition: .15s ease-in-out;
   text-transform: uppercase;
   cursor: pointer;
+  display: inline-block;
 }
 
 .button:hover {
@@ -451,13 +452,6 @@ p a {
 
 .form-input:nth-child(even) {
   padding-left: 2.5rem;
-}
-
-.form-container {
-  /* display: flex; */
-  /* justify-content: center;
-  flex-wrap: wrap;
-  width: 100%; */
 }
 
 .quote {
