@@ -302,7 +302,6 @@ body {
 
 @media (max-width: 899px) {
   .margin-primary {
-    margin-top: 6rem;
     margin-left: 6rem;
     margin-right: 6rem;
   }
@@ -310,7 +309,6 @@ body {
 
 @media (min-width: 900px) {
   .margin-primary {
-    margin-top: 8rem;
     margin-left: 8rem;
     margin-right: 8rem;
   }
@@ -318,13 +316,19 @@ body {
 
 @media (min-width: 1095px) {
   .margin-primary {
-    margin-primary: 8rem;
     margin-left: 20rem;
     margin-right: 20rem;
   }
 }
 
+.margin-header {
+  margin-top: 2rem;
+}
 
+.margin-primary {
+  margin-top: 0;
+  padding-top: 4rem;
+}
 
 
 
@@ -334,7 +338,7 @@ nav {
   display: flex;
   position: relative;
   justify-content: space-between;
-  margin-bottom: var(--space-quad);
+  margin-bottom: var(--space-default);
   align-items: center;
 }
 
@@ -346,12 +350,12 @@ nav {
 }
 
 .logo {
-  width: 100px;
+  width: 90px;
   fill: var(--brown-dk);
 }
 
 p.t-hero-serif {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 
@@ -404,7 +408,7 @@ ul.location {
   display: flex;
   position: relative;
   justify-content: space-between;
-  margin-bottom: 12rem;
+  margin-bottom: 8rem;
 }
 
 .intro-content-text {
@@ -463,11 +467,13 @@ ul.location {
 
 /* Form */
 
-.quote::before {
-  content: url(./assets/images/ragged-edge-top.svg); 
-  position: relative;
-  top: -3rem;
-  margin: 0;
+.ragged-edge {
+  background: url(./assets/images/ragged-edge-top.svg) bottom no-repeat;
+  height: 3.2rem;
+}
+
+form {
+  padding-bottom: 7rem;
 }
 
 /* input {
@@ -530,6 +536,7 @@ label {
   font-weight: 700;
   position: relative;
   top: -5rem;
+  color: var(--brown-dk);
 }
 
 input {
@@ -583,6 +590,10 @@ textarea:focus + label {
   top: -2rem;
 }
 
+.textarea {
+  margin-bottom: 3rem;
+}
+
 input:focus {
   border-bottom-color: var(--gold);
   transition: all ease-in-out .15s;
@@ -609,4 +620,5 @@ footer p{
 .social-icon {
   display: inline-block;
   width: 3.2rem;
+  margin-bottom: 2.4rem;
 }
