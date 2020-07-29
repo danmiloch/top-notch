@@ -266,30 +266,6 @@ body {
 }
 }
 
-/* Skip Nav */
-.skip-nav {
-  padding: var(--space-default);
-  display: inline-block;
-  position: absolute;
-  color: var(--white);
-  background-color: var(--brown-dk);
-  text-decoration: none;
-  border-radius: var(--radius);
-  transition: var(--transition-button) transform;
-  transform: translate(var(--space-oct), calc(var(--space-quad) * -2));
-}
-
-.skip-nav:hover {
-  background-color: var(--brown-lt);
-  transition: var(--transition-button);
-}
-
-.skip-nav:focus {
-  outline: 0.4rem solid var(--gold);
-  outline-offset: 0.4rem;
-  transform: translate(var(--space-oct), calc(var(--space-double)));
-}
-
 /* Body */
 
 
