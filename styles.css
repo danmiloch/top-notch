@@ -376,6 +376,8 @@ ul.location {
   margin-bottom: var(--space-double);
   text-transform: uppercase;
   color: var(--gold);
+  font-family: var(--font-family-sans);
+  font-weight: var(--weight-semibold);
 }
 
 .location li:first-of-type {
@@ -487,19 +489,6 @@ ul.location {
   height: 3.2rem;
 }
 
-form {
-  padding-bottom: 7rem;
-}
-
-/* input {
-  display: block;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 2px solid var(--black);
-  border-left: 0;
-  width: 100%;
-} */
-
 .form-intro {
   text-align: center;
 }
@@ -563,6 +552,13 @@ p a {
   }
 }
 
+.address {
+  display: block;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-left: 0;
+}
+
 .quote {
   background-color: var(--off-white);
 }
@@ -591,7 +587,7 @@ input {
   padding-right: 0;
   padding-bottom: .8rem;
   padding-left: 0;
-  margin-right: 32px;
+  /* margin-right: 32px; */
   margin-bottom: var(--space-quad);
   width: 100%;
   border-radius: 0;
