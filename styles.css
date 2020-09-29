@@ -129,6 +129,8 @@ body {
   height: 100%;
 }
 
+/*  -- VARIABLES -- */
+
 :root {
   /* Colorbook */
   --white: #f4f4f4;
@@ -275,6 +277,20 @@ body {
   font-size: 1.6rem;
 }
 
+@media (min-width: 1px) {
+  .margin-primary {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .margin-primary {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
 
 @media (max-width: 899px) {
   .margin-primary {
@@ -318,11 +334,43 @@ nav {
   align-items: center;
 }
 
-.phone-link {
+
+.nav-item {
   font-weight: var(--weight-bold);
   color: var(--brown-dk);
-  border-bottom: 3px solid var(--brown-dk);
   text-decoration: none;
+  margin-left: 8rem;
+  display: inline-block;
+  padding: 6px 0px;
+	margin: 0px 32px;
+  position: relative;
+}
+
+.nav-item:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  right: 100%;
+  position: absolute;
+  background: var(--green-lt);
+  transition: all 500ms cubic-bezier(0.2, 1, 0.2, 1) 0s;
+  width: 0;
+}
+
+.nav-item:hover:after {
+  width:100%;
+  right:0;
+}
+
+.nav-item--underline {
+  font-weight: var(--weight-bold);
+  color: var(--brown-dk);
+  text-decoration: none;
+  margin-left: 8rem;
+  border-bottom: 3px solid var(--brown-dk);
+  padding-bottom: 5px;
 }
 
 .logo {
@@ -481,6 +529,10 @@ ul.location {
 } */
 
 
+.section-header {
+  text-align: center;
+}
+
 
 /* Form */
 
@@ -556,12 +608,14 @@ p a {
   display: block;
   flex-wrap: nowrap;
   width: 100%;
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 
 .quote {
   background-color: var(--off-white);
+  padding-bottom: 8rem;
 }
+
 
 .form-line {
   display: flex;
@@ -603,6 +657,7 @@ input {
 
 
 textarea {
+  font-family: var(--font-family-sans);
   resize: none;
   font-size: 1.6rem;
   border-top: 0;
