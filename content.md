@@ -19,14 +19,16 @@ WORK
 We do honest, quality work at fair prices. 
 
 REMOVAL
-We excel at removing dangerous trees in hard-to-reach locations. We remove all the debris and offer stump grinding services. 
-
+At a certain point a tree may become a liability, threatening your home, your business and your safety. We remove it efficiently while respecting your property. It takes trust to hire a company to move 10,000 lbs of material over your home. We understand that and endeavor to earn your trust by communicating clearly, offering proof of our insurance and paying attention to your concerns. We offer you the highest level of expertise in the tree care business by requiring annual arbor care educational opportunities and updated certification for all of our crew members.
 
 PRUNING
 We prune woody plants. We can remove the deadwood from 100'  oak trees or delicately shape your ornamental trees. 
 
 PLANT HEALTH
-Our plant healthcare technicians are on the cutting edge of plant injection technology. If your trees or shrubs are struggling with pathogens, insect or fungal in nature we can provide a solution. 
+Many of the trees we care for are located in urban areas. This can be a harsh environment to grow in, which is why we offer services to fertilize and protect these trees from disease and poor soil conditions. 
+
+We are constantly striving to improve as we meet the growing demand for our services. Please understand that hiring us is a process; weather and demand factor greatly into our schedule. In order to provide better service, we are a year-round company and aim to communicate effectively at each step of your project. 
+
 
 CLEAN-UP
 
