@@ -532,6 +532,7 @@ li.location:first-child::after {
   bottom: 0;
   left: 0;
   right: 0;
+  width: auto;
 }
 
 .page-transition-bottom > svg {
@@ -574,27 +575,34 @@ li>p {
   padding-bottom: var(--)
 }
 
+.team img {
+  margin: 0 auto;
+  padding-bottom: var(--space-double);
+}
+
 .section-headshots {
   /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 100%;
+  width: 100%;
   overflow: scroll;
 }
 
 .headshot {
+  width: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   /* width: 281px;
   height: 338px;
   position: relative; */
-  min-height: 35rem;
-  min-width: 30rem;
+  min-height: 40rem;
+  min-width: 10rem;
   /* display: flex;
   align-items: flex-end; */
   position: relative;
   white-space: nowrap;
+  margin-bottom: var(--space-double)
 }
 
 .headshot h2 {
@@ -700,6 +708,10 @@ aside {
   padding-right: var(--space-double);
   padding-left: var(--space-double);
   padding-bottom: var(--space-quad);
+}
+
+.clean-up_margin-override {
+  margin-bottom: -20rem;
 }
 
 .card h3 {
