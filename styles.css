@@ -151,7 +151,7 @@ body {
   --green-dk: #2b3b3d;
   --brown-lt: #5e5146;
   --brown-dk: #3a342e;
-  --black: #1F2B3A;
+  --black: #1E282B;
 
   /* Spacing */
   --space-eighth: 0.2rem;
@@ -346,6 +346,14 @@ body {
   margin-bottom: var(--space-double);
 }
 
+.margin-bottom-quad {
+  margin-bottom: var(--space-quad);
+}
+
+.padding-bottom-double {
+  padding-bottom: var(--space-double);
+}
+
 .padding-bottom-quad {
   padding-bottom: var(--space-quad);
 }
@@ -400,7 +408,7 @@ nav {
 
 .logo svg {
   width: 90px;
-  margin-bottom: var(--space-default);
+  margin-bottom: var(--space-double);
   fill: var(--black);
 }
 
@@ -535,7 +543,7 @@ li.location:first-child::after {
 }
 
 .work h3 {
-  padding-top: var(--space-default);
+  padding-top: var(--space-quad);
   text-align: center;
 }
 
@@ -653,20 +661,27 @@ li>p {
 }
 
 aside {
-  /* background-image: url(./assets/images/jacob_haul.jpg);
-  width: 100%;
-  height: auto; */
-  position: relative;
-  z-index: -1;
+  
   align-content: center;
   justify-content: center;
+  background-size: cover;
 }
 
+.clean-up_bg {
+  background-image: url(./assets/images/jacob_haul.jpg);
+  min-height: 50rem;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  background-size: cover;
+  background-position: 35% 0;
+}
+/* 
 .clean-up img {
-  max-width: 150%;
-  overflow: hidden;
-
-}
+  overflow: ;
+  min-height: 40rem;
+  width: auto;
+} */
 
 /* .clean-up img {
   z-index: -1;
@@ -677,10 +692,17 @@ aside {
 
 .card {
   position: relative;
-  top: -15rem;
+  top: -25rem;
   text-align: center;
   background-color: var(--green-dk);
-  padding: var(--space-double);
+  padding-top: var(--space-quad);
+  padding-right: var(--space-double);
+  padding-left: var(--space-double);
+  padding-bottom: var(--space-quad);
+}
+
+.card h3 {
+  text-transform: uppercase;  
 }
 
 /* -- Form -- */
