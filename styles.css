@@ -563,6 +563,7 @@ li>p {
 
 .work-types img {
   margin-bottom: var(--space-double);
+  width: 100%;
 }
 
 /* -- Team -- */
