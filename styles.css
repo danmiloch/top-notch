@@ -198,13 +198,13 @@ body {
 
 /* Type Specs */
 .t-hero-sans {
-  font-family: var(--font-family-serif);
-  font-weight: var(--weight-black);
+  font-family: var(--font-family-sans);
+  font-weight: var(--weight-extra-bold);
   font-size: 4.4rem;
-  line-height: 5.5rem;
+  line-height: 5rem;
   color: var(--black);
   letter-spacing: -0.08rem;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 /* @media (max-width: 899px) {
@@ -221,16 +221,8 @@ body {
   }
 } */
 
-.t-hero-serif {
-  font-family: var(--font-family-serif);
-  font-size: 1.84rem;
-  font-weight: var(--weight-regular);
-  line-height: 1.5;
-  color: var(--black);
-}
-
-.t-testimonial-serif {
-  font-family: var(--font-family-serif);
+.t-testimonial {
+  font-family: var(--font-family);
   font-size: 4rem;
   font-weight: var(--weight-black);
   line-height: 1.25;
@@ -238,26 +230,26 @@ body {
   padding-top: var(--space-quad);
 }
 
-.t-section-header-serif {
-  font-family: var(--font-family-serif);
+.t-section-header {
+  font-family: var(--font-family-sans);
   font-size: 3.2rem;
-  font-weight: var(--weight-black);
+  font-weight: var(--weight-extra-bold);
   line-height: 1.375;
   color: var(--black);
 }
 
-.t-clean-up-header-serif {
-  font-family: var(--font-family-serif);
+.t-clean-up-header {
+  font-family: var(--font-family-sans);
   font-size: 3.2rem;
   font-weight: var(--weight-black);
   line-height: 1.375;
   color: var(--off-white);
 }
 
-.t-subsection-serif {
-  font-family: var(--font-family-serif);
-  font-size: 2.8rem;
-  font-weight: var(--weight-black);
+.t-subsection {
+  font-family: var(--font-family-sans);
+  font-size: 3rem;
+  font-weight: var(--weight-extra-bold);
   line-height: 1.4;
   color: var(--black);
 }
@@ -434,7 +426,7 @@ nav {
 
 .logo svg {
   width: 90px;
-  margin-bottom: var(--space-double);
+  margin-bottom: var(--space-default);
   fill: var(--black);
 }
 
