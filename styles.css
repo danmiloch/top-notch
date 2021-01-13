@@ -60,6 +60,19 @@
       format("truetype");
 }
 
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Merriweather Black"), local("Merriweather-Black"),
+    url("./assets/fonts/merriweather/merriweather-black.woff2")
+      format("woff2"),
+    url("./assets/fonts/merriweather/merriweather-black.woff") format("woff"),
+    url("./assets/fonts/merriweather/merriweather-black.ttf")
+      format("truetype");
+}
+
 /* permanent-marker-regular - latin */
 @font-face {
   font-family: 'Permanent Marker';
@@ -145,7 +158,7 @@ body {
 :root {
   /* Colorbook */
   --white: #fcfcfc;
-  --off-white: #F1F3F1;
+  --off-white: #EBEDEB;
   --green-lt: #607a5e;
   --gold: #B38B27;
   --green-dk: #2b3b3d;
@@ -172,6 +185,7 @@ body {
   --weight-semibold: 600;
   --weight-bold: 700;
   --weight-extra-bold: 800;
+  --weight-black: 900;
 
   /* Transition */
   --transition-button: 0.15s ease-in-out;
@@ -184,13 +198,13 @@ body {
 
 /* Type Specs */
 .t-hero-sans {
-  font-family: var(--font-family-sans);
-  font-weight: var(--weight-extra-bold);
-  font-size: 4rem;
-  line-height: 4rem;
+  font-family: var(--font-family-serif);
+  font-weight: var(--weight-black);
+  font-size: 4.4rem;
+  line-height: 5.5rem;
   color: var(--black);
   letter-spacing: -0.08rem;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 /* @media (max-width: 899px) {
@@ -215,29 +229,37 @@ body {
   color: var(--black);
 }
 
-.t-testimonial-sans {
-  font-family: var(--font-family-sans);
+.t-testimonial-serif {
+  font-family: var(--font-family-serif);
   font-size: 4rem;
-  font-weight: var(--weight-extra-bold);
+  font-weight: var(--weight-black);
   line-height: 1.25;
   color: var(--off-white);
-  padding-top: var(--space-oct);
+  padding-top: var(--space-quad);
 }
 
-.t-section-header-sans {
-  font-family: var(--font-family-sans);
+.t-section-header-serif {
+  font-family: var(--font-family-serif);
   font-size: 3.2rem;
-  font-weight: var(--weight-extra-bold);
+  font-weight: var(--weight-black);
   line-height: 1.375;
   color: var(--black);
 }
 
-.t-clean-up-header-sans {
-  font-family: var(--font-family-sans);
+.t-clean-up-header-serif {
+  font-family: var(--font-family-serif);
   font-size: 3.2rem;
-  font-weight: var(--weight-extra-bold);
+  font-weight: var(--weight-black);
   line-height: 1.375;
   color: var(--off-white);
+}
+
+.t-subsection-serif {
+  font-family: var(--font-family-serif);
+  font-size: 2.8rem;
+  font-weight: var(--weight-black);
+  line-height: 1.4;
+  color: var(--black);
 }
 
 .t-location-sans {
@@ -279,6 +301,10 @@ body {
   font-size: 1.6rem;
   font-weight: var(--weight-regular);
   line-height: 1.625;
+  color: var(--black);
+}
+
+.t-body-serif a {
   color: var(--black);
 }
 
@@ -495,7 +521,7 @@ li.location:first-child::after {
   text-decoration: none;
   padding: 1.6rem 3.2rem;
   letter-spacing: 0.15rem;
-  border-radius: 0px;
+  border-radius: 2.4rem;
   transition: 0.15s ease-in-out;
   text-transform: uppercase;
   cursor: pointer;
@@ -544,8 +570,8 @@ li.location:first-child::after {
 }
 
 .work h3 {
-  padding-top: var(--space-quad);
-  text-align: center;
+  margin-bottom: var(--space-double);
+  text-align: left;
 }
 
 h4.t-location-sans {
@@ -582,11 +608,11 @@ li>p {
 
 .section-headshots {
   /* position: relative; */
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  margin-left: var(--space-double);
-  margin-right: var(--space-double);
+  overflow: scroll;
 }
 
 .headshot {
@@ -595,8 +621,8 @@ li>p {
   /* width: 281px;
   height: 338px;
   position: relative; */
-  min-height: 30rem;
-  min-width: 10rem;
+  min-height: 45rem;
+  min-width: 37.5rem;
   /* display: flex;
   align-items: flex-end; */
   position: relative;
@@ -656,7 +682,7 @@ li>p {
 
 .testimonial {
   background-color: var(--green-dk);
-  margin-bottom: var(--space-quad);
+  margin-bottom: var(--space-double);
 }
 
 /* .review-container {
@@ -751,12 +777,12 @@ aside {
   }
 }
 
-.address {
+/* .address {
   display: block;
   flex-wrap: nowrap;
   width: 100%;
   padding-left: 0 !important;
-}
+} */
 
 .quote {
   background-color: var(--off-white);
@@ -831,6 +857,7 @@ textarea:focus + label {
 
 .textarea-label {
   top: -2rem;
+  text-align: left;
 }
 
 .textarea {
