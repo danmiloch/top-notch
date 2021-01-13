@@ -158,7 +158,7 @@ body {
 :root {
   /* Colorbook */
   --white: #fcfcfc;
-  --off-white: #EBEDEB;
+  --off-white: #eceee8;
   --green-lt: #607a5e;
   --gold: #B38B27;
   --green-dk: #2b3b3d;
@@ -202,7 +202,7 @@ body {
   font-weight: var(--weight-extra-bold);
   font-size: 4.4rem;
   line-height: 5rem;
-  color: var(--black);
+  color: var(--brown-dk);
   letter-spacing: -0.08rem;
   text-transform: uppercase;
 }
@@ -220,6 +220,15 @@ body {
     line-height: 5.5rem;
   }
 } */
+
+.t-hero-serif {
+  font-family: var(--font-family-serif);
+  font-weight: var(--weight-regular);
+  font-size: 1.84rem;
+  line-height: 3rem;
+  color: var(--black);
+  letter-spacing: -0.08rem;
+}
 
 .t-testimonial {
   font-family: var(--font-family);
@@ -248,7 +257,7 @@ body {
 
 .t-subsection {
   font-family: var(--font-family-sans);
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: var(--weight-extra-bold);
   line-height: 1.4;
   color: var(--black);
@@ -481,7 +490,7 @@ nav {
 ul.location {
   display: flex;
   justify-content: center;
-  margin-bottom: var(--space-double);
+  margin-bottom: var(--space-default);
 }
 
 .location {
@@ -509,11 +518,11 @@ li.location:first-child::after {
   font-size: 1.6rem;
   border: 0;
   color: var(--white);
-  background: var(--black);
+  background: var(--brown-dk);
   text-decoration: none;
   padding: 1.6rem 3.2rem;
   letter-spacing: 0.15rem;
-  border-radius: 2.4rem;
+  border-radius: 5rem;
   transition: 0.15s ease-in-out;
   text-transform: uppercase;
   cursor: pointer;
@@ -568,7 +577,7 @@ li.location:first-child::after {
 
 h4.t-location-sans {
   text-transform: uppercase;
-  margin-bottom: var(--space-double);
+  margin-bottom: var(--space-default);
 }
 
 
