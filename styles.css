@@ -235,7 +235,7 @@ body {
   font-size: 4rem;
   font-weight: var(--weight-black);
   line-height: 1.25;
-  color: var(--off-white);
+  color: var(--white);
   padding-top: var(--space-quad);
 }
 
@@ -252,7 +252,7 @@ body {
   font-size: 3.2rem;
   font-weight: var(--weight-black);
   line-height: 1.375;
-  color: var(--off-white);
+  color: var(--white);
 }
 
 .t-subsection {
@@ -314,7 +314,7 @@ body {
   font-size: 1.6rem;
   font-weight: var(--weight-regular);
   line-height: 1.625;
-  color: var(--off-white);
+  color: var(--white);
 }
 
 .t-testimonial-label {
@@ -323,7 +323,7 @@ body {
   font-weight: var(--weight-bold);
   line-height: 1.375;
   letter-spacing: 0.05rem;
-  color: var(--off-white);
+  color: var(--white);
 }
 
 .t-testimonial-link {
@@ -436,7 +436,7 @@ nav {
 .logo svg {
   width: 90px;
   margin-bottom: var(--space-default);
-  fill: var(--black);
+  fill: var(--brown-dk);
 }
 
 .nav-links {
@@ -454,6 +454,25 @@ nav {
   text-decoration: none;
   display: inline-block;
   padding: 2px 0px;
+  position: relative;
+}
+
+.nav-item a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  right: 100%;
+  position: absolute;
+  background: #607a5e;
+  transition: all 500ms cubic-bezier(0.2, 1, 0.2, 1) 0s;
+  width: 0;
+}
+
+.nav-item a:hover:after { 
+  width: 100%; 
+  right: 0; 
 }
 
 .nav-links li {
@@ -463,7 +482,6 @@ nav {
 .underline {
   text-decoration: none;
   border-bottom: 3px solid var(--black);
-  padding-bottom: 5px;
 }
 
 .nav-item:nth-child(-n + 2) a {
