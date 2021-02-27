@@ -549,6 +549,38 @@ nav {
   text-transform: uppercase;
 }
 
+.phone-mobile {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: var(--weight-bold);
+  color: var(--brown-dk);
+  text-decoration: none;
+  padding: 2px 0px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+@media (min-width:900px)  {
+  .phone-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .phone-mobile {
+    font-size: 1.2rem;
+  }
+}
+
+.phone-mobile a {
+  margin-left: 1rem;
+  margin-bottom: var(--space-quad);
+  color: var(--brown-dk);
+}
+
+
+
 .nav-item a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -685,6 +717,12 @@ li.location:first-child::after {
 @media (max-width: 420px) {
   .button {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .button {
+    margin-bottom: var(--space-default);
   }
 }
 
