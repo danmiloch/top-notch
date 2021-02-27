@@ -234,7 +234,7 @@ body {
   font-weight: var(--weight-regular);
   font-size: 1.84rem;
   line-height: 3rem;
-  color: var(--black);
+  color: var(--brown-dk);
   letter-spacing: -0.08rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -267,8 +267,8 @@ body {
   font-size: 3.2rem;
   font-weight: var(--weight-extra-bold);
   line-height: 1.375;
-  color: var(--black);
-  margin-bottom: 10rem;
+  color: var(--brown-dk);
+  margin-bottom: 8rem;
 }
 
 
@@ -287,7 +287,7 @@ body {
   font-size: 2.4rem;
   font-weight: var(--weight-extra-bold);
   line-height: 1.4;
-  color: var(--black);
+  color: var(--brown-dk);
 }
 
 .t-location-sans {
@@ -305,7 +305,7 @@ body {
   font-weight: var(--weight-bold);
   line-height: 1.375;
   letter-spacing: 0.05rem;
-  color: var(--black);
+  color: var(--brown-dk);
 }
 
 .t-footer-sans {
@@ -313,7 +313,7 @@ body {
   font-size: 1.6rem;
   font-weight: var(--weight-medium);
   line-height: 1;
-  color: var(--black);
+  color: var(--brown-dk);
 }
 
 .t-fine-print-sans {
@@ -321,7 +321,7 @@ body {
   font-size: 1.2rem;
   font-weight: var(--weight-medium);
   line-height: 1;
-  color: var(--black);
+  color: var(--brown-dk);
 }
 
 .t-body-serif {
@@ -329,14 +329,15 @@ body {
   font-size: 1.6rem;
   font-weight: var(--weight-regular);
   line-height: 1.625;
-  color: var(--black);
+  color: var(--brown-dk);
 }
 
 .t-body-serif a {
-  color: var(--black);
+  color: var(--brown-dk);
 }
 
 .t-white-serif {
+  margin-top: var(--space-double);
   font-family: var(--font-family-serif);
   font-size: 1.6rem;
   font-weight: var(--weight-regular);
@@ -477,7 +478,11 @@ body {
   color: var(--green-lt);
   border-bottom: 3px solid var(--green-lt);
   display: inline-block;
-  margin: 10rem 0rem;
+  margin-top: 10rem;
+  margin-bottom: 7rem;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Body */
@@ -527,11 +532,21 @@ nav {
 
 .nav-item a {
   font-weight: var(--weight-bold);
-  color: var(--black);
+  color: var(--brown-dk);
   text-decoration: none;
   display: inline-block;
   padding: 2px 0px;
   position: relative;
+  text-transform: uppercase;
+}
+
+.nav-phone a {
+  font-weight: var(--weight-bold);
+  color: var(--brown-dk);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
 }
 
 .nav-item a:after {
@@ -558,7 +573,7 @@ nav {
 
 .underline {
   text-decoration: none;
-  border-bottom: 3px solid var(--black);
+  border-bottom: 3px solid var(--brown-dk);
 }
 
 .nav-item:nth-child(-n + 2) a {
@@ -599,8 +614,8 @@ nav {
 }
 
 .img-tree {
-  /* opacity: 37%; */
-  width: 90%;
+  margin-top: 4rem;
+  width: 83%;
   position: relative;
   bottom: -20rem;
   z-index: -1;
@@ -679,13 +694,19 @@ li.location:first-child::after {
   background-color: var(--off-white);
 }
 
-.work h3 {
-  margin-bottom: 5rem;
-  text-align: left;
-}
-
 .work ul {
   margin-bottom: 10vh;
+}
+
+li svg {
+  max-width: 65px;
+  margin-bottom: var(--space-double);
+}
+
+@media (max-width: 900px) {
+  .work li {
+    margin-bottom: 10rem;
+  }
 }
 
 .page-transition {
@@ -730,11 +751,9 @@ h4.t-location-sans {
     margin-bottom: var(--space-double);
   }
 
-  /* .content {
-    margin-left: 8rem;
-    width: 40%;
-    max-width: 70rem;
-  } */
+  .content {
+   text-align: center;
+  }
 
   .media {
     position: relative;
@@ -852,8 +871,12 @@ li>p {
   justify-content: center;
 } */
 
-.testimonial-stars svg {
-  margin-left: 5%;
+.testimonial-stars {
+  margin: 0 auto;
+  /* margin-left: 5%; */
+  width: 20vw;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 aside {
@@ -884,10 +907,7 @@ aside {
   top: -25rem;
   text-align: center;
   background-color: var(--green-dk);
-  padding-top: var(--space-quad);
-  padding-right: var(--space-quad);
-  padding-left: var(--space-quad);
-  padding-bottom: var(--space-quad);
+  padding: 5rem;
 }
 
 @media (min-width: 900px) {
@@ -979,14 +999,14 @@ label {
   font-weight: 700;
   position: relative;
   top: -5rem;
-  color: var(--black);
+  color: var(--brown-dk);
 }
 
 input {
   font-size: 1.6rem;
   border-top: 0;
   border-right: 0;
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid var(--brown-dk);
   border-left: 0;
   background-color: transparent;
   padding-top: 0.8rem;
@@ -1013,7 +1033,7 @@ textarea {
   font-size: 1.6rem;
   border-top: 0;
   border-right: 0;
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid var(--brown-dk);
   border-left: 0;
   background-color: transparent;
   padding-bottom: 0rem;
