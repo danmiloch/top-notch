@@ -571,6 +571,10 @@ nav {
   .phone-mobile {
     font-size: 1.2rem;
   }
+
+  .underline {
+    border-bottom: 2px;
+  }
 }
 
 .phone-mobile a {
@@ -606,6 +610,12 @@ nav {
 .underline {
   text-decoration: none;
   border-bottom: 3px solid var(--brown-dk);
+}
+
+@media (max-width: 420px) {
+  .underline {
+    border-bottom: 2px solid var(--brown-dk);
+  }
 }
 
 .nav-item:nth-child(-n + 2) a {
@@ -671,6 +681,12 @@ ul.location {
     justify-content: left;
   }
   }
+
+  @media (max-width: 900px) {
+    ul.location {
+margin-bottom: var(--space-double);   }
+    }
+  
 
 .location {
   text-transform: uppercase;
