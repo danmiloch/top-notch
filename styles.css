@@ -196,6 +196,15 @@ body {
 
 /* ---- END RESETS ---- */
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-content {
+  flex: 0 0 auto;
+}
+
 /* Type Specs */
 .t-hero-sans {
   font-family: var(--font-family-sans);
@@ -1149,4 +1158,9 @@ input:focus {
 input:focus + label {
   color: var(--gold);
   transition: all ease-in-out 0.15s;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: var(--green-lt)
 }
