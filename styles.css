@@ -633,23 +633,24 @@ nav {
     text-align: left;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: var(--space-quad);
+    margin-bottom: var(--space-oct);
     margin-top: var(--space-quad);
   }
 }
 
-@media (min-width: 1864px) {
+@media (min-width: 1085px) {
   .lede {
     width: 80%;
   }
 }
+
+
 
 @media (max-width: 900px) {
   .lede {
     margin-bottom: 2em;
   }
 }
-
 
 .intro-content-img {
   margin-top: -25rem;
@@ -928,9 +929,15 @@ li>p {
 .testimonial-stars {
   margin: 0 auto;
   /* margin-left: 5%; */
-  width: 20vw;
+  width: 70%;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media (min-width: 500px) {
+  .testimonial-stars {
+    width: 50%;
+  }
 }
 
 aside {
@@ -942,7 +949,7 @@ aside {
 
 .clean-up_bg {
   background-image: url(./assets/images/jacob_haul.jpg);
-  min-height: 50vw;
+  min-height: 80vw;
   width: 100%;
   position: relative;
   z-index: -1;
@@ -950,9 +957,15 @@ aside {
   background-position: 35% 0;
 }
 
-@media (min-width: 900px){
+@media (min-width: 650px){
   .clean-up_bg {
-    min-height: 40vw;
+    min-height: 80vh;
+}
+}
+
+@media (max-width: 650px){
+  .clean-up_bg {
+    min-height: 90vh;
 }
 }
 
