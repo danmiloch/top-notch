@@ -845,25 +845,28 @@ li>p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   margin-bottom: 15vh;
 }
 
 @media (min-width: 680px) {
   .section-headshots {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
 
 
 .headshot {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 281px;
   height: 338px;
   position: relative;
   white-space: nowrap;
-  margin-bottom: var(--space-double)
+  margin-bottom: var(--space-double);
+  display: inline-block;
+  flex: 0 0 auto;
 }
 
 .headshot h2 {
@@ -900,18 +903,25 @@ li>p {
 
 .headshot--brian {
   background-image: url(./assets/images/bryan_bg.png);
+  background-position: bottom center;
 }
 
 .headshot--jeremiah {
   background-image: url(./assets/images/jeremiah_bg.png);
+  background-position: bottom center;
+
 }
 
 .headshot--ryley {
   background-image: url(./assets/images/ryley_bg.png);
+  background-position: bottom center;
+
 }
 
 .headshot--curt {
   background-image: url(./assets/images/curt_bg.png);
+  background-position: bottom center;
+
 }
 
 /* -- Testimonial -- */
