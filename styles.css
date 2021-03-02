@@ -322,7 +322,7 @@ body {
   font-size: 1.6rem;
   font-weight: var(--weight-medium);
   line-height: 1;
-  color: var(--brown-dk);
+  color: var(--off-white);
 }
 
 .t-fine-print-sans {
@@ -1161,6 +1161,12 @@ input:focus + label {
 }
 
 .footer {
+  
   flex-shrink: 0;
-  background-color: var(--green-lt)
+  background-color: var(--green-dk);
+  height: 20rem;
+}
+
+footer p {
+  padding-top: 5rem;
 }
