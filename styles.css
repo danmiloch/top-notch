@@ -1199,7 +1199,7 @@ input:focus + label {
   flex-shrink: 0;
   background-color: var(--green-dk);
   height: 15rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 footer.button {
