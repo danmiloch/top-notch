@@ -590,20 +590,6 @@ nav {
   }
 }
 
-.nav-item:nth-child(-n + 2) a {
-  text-decoration: none;
-}
-
-
-.nav-phone a {
-  font-weight: var(--weight-bold);
-  color: var(--brown-dk);
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  text-transform: uppercase;
-}
-
 .phone-mobile {
   display: flex;
   justify-content: center;
@@ -626,10 +612,6 @@ nav {
   .phone-mobile {
     font-size: 1.2rem;
   }
-
-  .underline {
-    border-bottom: 2px;
-  }
 }
 
 .phone-mobile a {
@@ -637,6 +619,22 @@ nav {
   margin-bottom: var(--space-quad);
   color: var(--brown-dk);
 }
+
+.nav-item:nth-child(-n + 2) a {
+  text-decoration: none;
+}
+
+
+.nav-phone a {
+  font-weight: var(--weight-bold);
+  color: var(--brown-dk);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+}
+
+
 
 /* -- HERO -- */
 
