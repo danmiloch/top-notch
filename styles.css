@@ -854,6 +854,10 @@ li>p {
   padding-bottom: var(--space-double);
 }
 
+.cert {
+  width: 65px;
+}
+
 .section-headshots {
   /* position: relative; */
   /* width: 100%; */
