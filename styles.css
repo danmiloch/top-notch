@@ -673,7 +673,8 @@ nav {
 
 .img-tree {
   margin-top: 4rem;
-  width: 83%;
+  width: 700;
+  height: 700;
   position: relative;
   bottom: -20rem;
   z-index: -1;
